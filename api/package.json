@@ -1,11 +1,12 @@
 {
-  "name": "api",
+  "name": "todo-api",
   "version": "1.0.0",
-  "description": "Todo app for biginner and mid level developer for grtting familiar with atlas-cli migration",
+  "description": "Todo app for biginner and mid level developer for getting familiar with atlas-cli.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "start": "node server"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mysql2": "^3.2.0",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.29.3"
   }
 }

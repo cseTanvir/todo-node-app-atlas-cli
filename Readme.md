@@ -1,3 +1,38 @@
+## Project Directory structure
+
+- project/
+    - api/
+        - config/
+            - dbConfig.js
+        - controllers/
+            - TodoController.js
+        - Models/
+            - index.js
+            - todoModel.js
+        - Routes/
+            - todoRoutes.js
+        - schema/
+            - schema.hcl (encoding must be UTF-8) 
+        - .env
+        - index.js
+        - package.json
+
+    - front/
+        - public/
+            - index.html
+        - src/
+            - App.js
+            - index.css
+            - NewTodo.js
+            - Todo.js
+            - TodoList.js
+        - package.json
+        - postcss.config.js
+        - tailwind.config.js
+
+
+
+
 ## How to migrate database, goto  /api/atlas-cli , then run the following command
 
 ``` atlas schema apply  -u "mysql://todo_atlas_user:todo_atlas_password@localhost:3306/todo_atlas"  --to file://schema.hcl ```
